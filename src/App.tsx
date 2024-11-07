@@ -29,6 +29,7 @@ function App() {
     'align',
     'link', 'image', 'video'
   ];
+  console.log(value)
 
   return (
     <ReactQuill 

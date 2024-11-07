@@ -3,7 +3,9 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
-const router = createBrowserRouter(createRoutesFromElements(<Route path="/" element={<App />} />));
+const router = createBrowserRouter(createRoutesFromElements(<Route path="/" element={<App />} />), {
+  basename: '/hello-quill',
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
